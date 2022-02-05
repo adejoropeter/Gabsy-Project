@@ -1,0 +1,69 @@
+@media screen and (max-width:800px) {
+      .first-row, .third-row, .fourth-row, .fifth-row {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .dont, .darkness, .clean, .spike, .fruity, .series, .post, .world {
+            width: 100%;
+      }
+
+
+      .darkness p, .dont p, .series p, .clean p, .fruity p, .beggining p, .green p, .spike p, .blue p, .world p {
+            opacity: 1;
+      }
+
+      .darkness p:hover, .dont p:hover {
+            opacity: 1;
+      }
+
+      .darkness div, .dont div, .clean div, .spike div, .series div, .world div, .green div, .fruity div, .beggining div {
+            display: none;
+      }
+
+      .beggining p {
+            position: absolute;
+            top: 45%;
+            left: 32%;
+      }
+
+      .fruity p {
+            position: absolute;
+            top: 45%;
+            left: 40%;
+      }
+
+      .dont p, .darkness p {
+            position: absolute;
+            top: 45%;
+            left: 40%;
+      }
+
+
+
+}
+
+@media screen and (max-width:850px) {
+      .list, .lists {
+            display: none;
+      }
+
+      .null, .fas {
+            display: block;
+            color: grey;
+      }
+
+
+      .main p {
+           font-size: 2rem;
+           font-weight: 300;
+           line-height: 2.4rem;
+      }
+}
+
+
+@media screen and (max-width:600px){
+     img{
+           height: 20rem;
+     }
+}

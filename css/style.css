@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+/* ------------Univervesal Selector. Added some fiexed and important properties------------- */
+* {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5rem;
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+}
+
+/* --------------------Body Selector------------------- */
+
+body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      min-height: 100vh;
+      /* font-family: 'Open Sans', sans-serif; */
+      font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+      padding: 30px 50px;
+}
+
+
+
+nav {
+      width: 100%;
+}
+
+
+
+.null, .fas {
+      display: none;
+}
+
+/* -------------------Flexing the Whole Nav Bar------------ */
+
+.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* margin: 20px; */
+}
+
+/* -------------Flex The List Items--------------- */
+
+.list ul, .lists ul {
+      display: flex;
+
+}
+
+/* -------------------Added Margin Of 10px to the list items and a fot weight----------------- */
+
+.list ul li, .lists ul li {
+      margin-right: 10px;
+      font-weight: 400;
+}
+
+/* ----------------Added color, transition and font size to the list items----------------------- */
+.list ul li a, .lists ul li a {
+      color: rgba(0, 0, 0, 0.417);
+      transition: all 0.2s ease;
+      font-size: .9rem;
+}
+
+/* -------------------------Added a hover effect to the list items----------------------- */
+.list ul li a:hover, .lists ul li a:hover {
+      color: #000000;
+}
+
+
+/* ---------- Also added a focus to the list items, so when clicked on it changes to black------------- */
+.list ul li a:focus, .lists ul li a:focus {
+      color: rgb(0, 0, 0);
+}
+
+/* --------To the LONDON Logo, added all these properties to make it look like a logo--------- */
+.logo a {
+      color: #000;
+      font-weight: 600;
+      font-size: 2rem;
+}
+
+/* ----------------Main--------------- */
+.main {
+      /* background-color: #000; */
+      width: fit-content;
+      margin: 10rem auto;
+
+}
+
+.main p {
+      text-align: center;
+      width: 100%;
+      font-size: 2.5rem;
+      font-weight: 600;
+      /* letter-spacing: .1rem; */
+      line-height: 3.4rem;
+
+}
+
+/* ------------------ Styling the Images---------------- */
+.image-container {
+      width: 100%;
+      cursor: pointer;
+}
+
+img {
+      height: 25rem;
+      object-fit: cover;
+}
+
+/* ------------------Thye first row------------- */
+
+/* -----------------Flexed the first and second images--------------------- */
+
+
+.first-row {
+      display: flex;
+}
+
+
+/* --------------Positioned the first image relative to it child------------- */
+
+.darkness, .dont {
+      position: relative;
+      width: 50%;
+}
+
+/* ------------Positioned the first image child absolute to it parent----------- */
+
+.darkness div, .dont div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+}
+
+
+.darkness:hover div, .dont:hover div {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 98%;
+      width: 100%;
+}
+
+/* --------------------------centered the text on the image------------------- */
+.darkness p, .dont p {
+      font-size: 2rem;
+      position: absolute;
+      top: 40%;
+      left: 35%;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      z-index: 10;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.darkness:hover p, .dont:hover p {
+      opacity: 1;
+}
+
+.dont img, .darkness img {
+      width: 100%;
+}
+
+/* -------------------The second row--------------------- */
+
+/* --------------Positioned the second image relative to it child------------- */
+
+.blue {
+      position: relative;
+}
+
+.blue img {
+      width: 100%;
+}
+
+/* ------------Positioned the second image child absolute to it parent----------- */
+.blue div {
+      position: absolute;
+      top: 0;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.blue:hover div {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 98%;
+      width: 100%;
+
+}
+
+/* --------------------------centered the text on the image------------------- */
+
+
+.blue p {
+      font-size: 2rem;
+      position: absolute;
+      top: 45%;
+      left: 40%;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      z-index: 10;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.blue:hover p {
+      opacity: 1;
+}
+
+/* ---------------------The third row---------------- */
+
+.third-row {
+      display: flex;
+}
+
+.clean img, .spike img {
+      width: 100%;
+}
+
+/* --------------Positioned the first image relative to it child------------- */
+.clean, .spike {
+      position: relative;
+      width: 50%;
+}
+
+/* ------------Positioned the first image child absolute to it parent----------- */
+
+.clean div, .spike div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.clean:hover div, .spike:hover div {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 98%;
+      width: 100%;
+
+}
+
+/* --------------------------centered the text on the image------------------- */
+.clean p, .spike p {
+      font-size: 2rem;
+      position: absolute;
+      top: 45%;
+      left: 35%;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      z-index: 10;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.spike p {
+      position: absolute;
+      top: 45%;
+      left: 40%;
+}
+
+.clean:hover p, .spike:hover p {
+      opacity: 1;
+}
+
+/* -------------------------The Fourth row-------------------- */
+
+.green {
+      position: relative;
+}
+
+.green img {
+      width: 100%;
+}
+
+/* ------------Positioned the second image child absolute to it parent----------- */
+.green div {
+      position: absolute;
+      top: 0;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.green:hover div {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 98%;
+      width: 100%;
+
+}
+
+/* --------------------------centered the text on the image------------------- */
+
+
+.green p {
+      font-size: 2rem;
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      z-index: 10;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.green:hover p {
+      opacity: 1;
+}
+
+/* -----------------------The fifth row--------------- */
+
+.fourth-row {
+      display: flex;
+}
+
+.series img, .fruity img {
+      width: 100%;
+}
+
+/* --------------Positioned the first image relative to it child------------- */
+.fruity, .series {
+      position: relative;
+      width: 50%;
+}
+
+
+/* ------------Positioned the first image child absolute to it parent----------- */
+
+.fruity div, .series div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.fruity:hover div, .series:hover div {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 98%;
+      width: 100%;
+
+}
+
+/* --------------------------centered the text on the image------------------- */
+.fruity p, .series p {
+      font-size: 2rem;
+      position: absolute;
+      top: 45%;
+      left: 35%;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      z-index: 10;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.fruity:hover p, .series:hover p {
+      opacity: 1;
+}
+
+/* ---------------------The sixth row */
+
+
+.beggining {
+      position: relative;
+}
+
+.beggining img {
+      width: 100%;
+}
+
+/* ------------Positioned the second image child absolute to it parent----------- */
+.beggining div {
+      position: absolute;
+      top: 0;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.beggining:hover div {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 98%;
+      width: 100%;
+
+}
+
+/* --------------------------centered the text on the image------------------- */
+
+
+.beggining p {
+      font-size: 2rem;
+      position: absolute;
+      top: 45%;
+      left: 40%;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      z-index: 10;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.beggining:hover p {
+      opacity: 1;
+}
+
+/* ---------------The seventh row----------------- */
+
+.fifth-row {
+      display: flex;
+}
+
+.world img, .post img {
+      width: 100%;
+}
+
+/* --------------Positioned the first image relative to it child------------- */
+.world, .post {
+      position: relative;
+      width: 50%;
+}
+
+/* ------------Positioned the first image child absolute to it parent----------- */
+
+.world div, .post div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+.world:hover div {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 98%;
+      width: 100%;
+
+}
+
+/* --------------------------centered the text on the image------------------- */
+.world p {
+      font-size: 2rem;
+      position: absolute;
+      top: 45%;
+      left: 35%;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      z-index: 10;
+      transition: all .3s cubic-bezier(.33, 0, .2, 1);
+
+}
+
+
+.world:hover p {
+      opacity: 1;
+}
+
+.fifth-row .post p {
+      font-size: 3rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      font-weight: 600;
+      width: 70%;
+      margin: 3rem 3rem;
+      line-height: 3.5rem;
+}
+
+.post:hover p {
+      text-decoration: underline;
+}
+
+footer p {
+      text-align: center;
+      font-size: 100%;
+      color: grey;
+      margin: 2rem;
+}
+
+footer p a {
+      color: #000;
+}
+
+footer p a:hover{
+      text-decoration: underline;
+}
+
