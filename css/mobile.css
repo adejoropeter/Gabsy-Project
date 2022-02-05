@@ -11,6 +11,7 @@
 
       .darkness p, .dont p, .series p, .clean p, .fruity p, .beggining p, .green p, .spike p, .blue p, .world p {
             opacity: 1;
+            line-height: 2rem;
       }
 
       .darkness p:hover, .dont p:hover {
@@ -55,15 +56,80 @@
 
 
       .main p {
-           font-size: 2rem;
-           font-weight: 300;
-           line-height: 2.4rem;
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 2.4rem;
       }
 }
 
 
-@media screen and (max-width:600px){
-     img{
-           height: 20rem;
-     }
+@media screen and (max-width:600px) {
+      img {
+            height: 20rem;
+      }
+
+}
+
+@media screen and (max-width:450px) {
+      main{
+            padding: 30px 10px;
+      }
+      .fifth-row .post p{
+            font-size: 2.5rem;
+            margin: 1rem 1rem;
+            line-height: 2.4rem;
+      }
+      img{
+            height: 15rem;
+           
+      }
+      .darkness p {
+            position: absolute;
+            left: 20%;
+      }
+
+      .dont p {
+            position: absolute;
+            left: 20%;
+      }
+
+      .blue p {
+            position: absolute;
+            left: 20%;
+      }
+
+      .clean p {
+            position: absolute;
+            left: 20%;
+      }
+
+      .spike p {
+            position: absolute;
+            left: 20%;
+      }
+
+      .green p {
+            position: absolute;
+            left: 30%;
+      }
+
+      .fruity p {
+            position: absolute;
+            left: 25%;
+      }
+
+      .series p {
+            position: absolute;
+            left: 18%;
+      }
+
+      .beggining p {
+            position: absolute;
+            left: 14%;
+      }
+
+      .world p {
+            position: absolute;
+            left: 20%;
+      }
 }
