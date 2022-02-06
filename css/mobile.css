@@ -71,18 +71,21 @@
 }
 
 @media screen and (max-width:450px) {
-      main{
+      main {
             padding: 30px 10px;
       }
-      .fifth-row .post p{
+
+      .fifth-row .post p {
             font-size: 2.5rem;
             margin: 1rem 1rem;
             line-height: 2.4rem;
       }
-      img{
+
+      img {
             height: 15rem;
-           
+
       }
+
       .darkness p {
             position: absolute;
             left: 20%;
@@ -131,5 +134,9 @@
       .world p {
             position: absolute;
             left: 20%;
+      }
+
+      footer p {
+            font-size: .4rem;
       }
 }
