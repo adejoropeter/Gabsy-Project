@@ -484,7 +484,7 @@ img {
 
 footer p {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.2rem;
       color: grey;
       margin: 1.8rem;
 }
@@ -494,6 +494,6 @@ footer p a {
 }
 
 footer p a:hover{
-      text-decoration: underline;
+      text-decoration: underline solid grey .1rem;
 }
 
